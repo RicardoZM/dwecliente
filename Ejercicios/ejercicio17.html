@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        var a = 0;
+        numero = parseInt(prompt("Introduce un numero", ""));
+        if (isNaN(numero)) {
+            document.write("Debe introducir un numero");
+        } else {
+            for (i = 1; i < (numero + 1); i++) {
+                if (numero % i == 0) {
+                    a++;
+                }
+            }
+            if (a != 2) {
+                document.write("El numero " + numero + " no es Primo");
+            } else {
+                document.write("El numero " + numero + " si es Primo");
+            }
+        }
+        
+    </script>
+    <title>Ejercicio 17 </title>
+</head>
+<body>
+</body>
+</html>

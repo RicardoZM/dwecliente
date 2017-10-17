@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        var fechaHoy;
+        var fecha85;
+        var fecha187;
+        var fechaResto;
+
+        //Mostrar la fecah de hoy
+        fechaHoy = new Date();
+        document.write(fechaHoy.toLocaleDateString() + "<br>");
+
+        //Sumar 85 dias a la variable fechaHoy
+        fecha85 = fechaHoy.getDate();
+        fechaHoy.setUTCDate(85 + fecha85);
+        document.write(fechaHoy.toLocaleDateString() + "<br>");
+
+        //Restar 187 dias a la variable fechaHoy
+        fecha187 = new Date();
+        fecha187.setDate(fechaHoy.getDate() - 187);
+        document.write(fecha187.toLocaleDateString() + "<br>");
+
+        //Sumarle 2 años a la variable fecha187
+        fecha85 = fechaHoy.getDate();
+        fechaHoy.setUTCDate(730 + fecha85);
+        document.write(fechaHoy.toLocaleDateString() + "<br>");
+
+        //Restar 24h a la variable fecha187
+        fecha187.setDate(fecha187.getDate() - 1);
+        document.write(fecha187.toLocaleDateString() + "<br>");
+
+        //fechaResto que sea la resta de fecha85 - fecha187
+        fechaResto =  new Date(fecha85 - fecha187);
+        document.write(fechaResto.toLocaleDateString())
+        
+    </script>
+    <title>Ejercicio 19</title>
+</head>
+
+<body>
+</body>
+
+</html>

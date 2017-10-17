@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Ejercicio 19</title>
+</head>
+
+<body>
+    Anyo<input type="text" id="ano"><br/>
+    Mes<input type="text" id="mes"><br/>
+    Dia<input type="text" id="dia"><br/>
+    Hora<input type="text" id="hora"><br/>
+    Minutos<input type="text" id="minutos"><br/>
+    Segundos<input type="text" id="segundos"><br/>
+
+    <input type="button" value="Aceptar" id="boton" onclick="miFuncion();"><br/>
+
+    <script>
+    function miFuncion(){
+        var ano,mes,dia,hora,minutos,segundos;
+
+        ano = document.getElementById("ano").value;
+        ano = parseInt(ano);
+        mes = document.getElementById("mes").value;
+        dia = document.getElementById("dia").value;
+        dia = parseInt(dia);
+        hora = document.getElementById("hora").value;
+        hora = parseInt(hora);
+        minutos = document.getElementById("minutos").value;
+        minutos = parseInt(minutos);
+        segundos = document.getElementById("segundos").value;
+        segundos = parseInt(segundos);
+
+        console.log(ano + mes + dia);
+        
+     }
+
+    </script>
+</body>
+
+</html>
+

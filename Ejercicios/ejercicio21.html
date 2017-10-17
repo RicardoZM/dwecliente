@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejericios 21</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        document.write("Numero de elementos<input type='text' id='elemento'><br>");
+        document.write("Minimo<input type='text' id='minimo'><br>");
+        document.write("Maximo<input type='text' id='maximo'><br>");
+        document.write("<input type='button' value='Generar' onclick='imprimirNumeros()'><br>");
+
+        function imprimirNumeros() {
+            maximo = document.getElementById("elemento").value;
+            var repetido = 0;
+            var fin = 0;
+            numeros = [];
+            while (repetido != -1) {
+                for (var i = 1; i <= maximo; i++) {
+                    var numaleatorio = Math.floor(Math.random() * (maximo + 1));
+                    if (numeros.indexOf(numaleatorio) < 0 && numaleatorio != 0) {
+                        document.write(numaleatorio + '<br>');
+                        numeros.push(numaleatorio);
+                        fin++;
+                    }
+                    fin == maximo ? repetido = -1 : false;
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>
+
+
+
+
+/*function imprimir1aNA(min, max) {
+		if(max>0){
+			var rept = 0;
+			var end = 0;
+			arraynum = [];
+			while (rept != -1){
+				for(var i=1 ; i<= max ; i++){
+			    	var numaleatorio = Math.floor(Math.random() * (max+1));
+					if (arraynum.indexOf(numaleatorio) < 0 && numaleatorio != 0) {
+						document.write(numaleatorio + '<br>');
+						arraynum.push(numaleatorio);
+						end++;
+					}
+					end == max ? rept = -1 : false ;
+				}
+			}
+		}
+		imprimir1aNA(0, 10)

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 11</title>
+</head>
+<body>
+<div id="mi div">
+</div>
+<script>
+        var valor = parseInt(prompt("Introduce una edad", ""));
+        switch (valor) {
+            case 5:
+            case 6:
+            case 7:
+                document.write("Pre-Benjamin");
+                break;
+            case 8:
+            case 9:
+                document.write("Benjamin");
+                break;
+            case 10:
+            case 11:
+                document.write("Alevin");
+                break;
+            case 12:
+            case 13:
+                document.write("Infantil");
+                break;
+            case 14:
+            case 15:
+                document.write("Cadete");
+                break;
+            case 16:
+            case 17:
+            case 18:
+                document.write("Juvenil");
+                break;
+            default:
+                document.write("Fuera de categoria");
+                break;             
+        }
+       document.getElementById("mi div").innerHTML = "<p><strong>Edad introducida: </strong> " + valor + "</p>";
+    </script>
+</body>
+</html>

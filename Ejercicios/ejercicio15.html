@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function miFuncion() {
+            for (i = 1; i <= 300; i++) {
+                if (i % 10 == 0) {
+                    document.write(i + "<br>");
+                } else if (i % 9 == 0 && i % 4 == 0) {
+                    document.write('<font size = +2 color = "blue">' + i + '</font>');
+                } else if (i % 4 == 0) {
+                    document.write('<font size = +4 color = "green">' + i + '</font>');
+                } else if (i % 9 == 0) {
+                    document.write('<font size = -2 color = "red">' + i + '</font>');
+                } else {
+                    document.write(i);
+                }
+            }
+        }
+        
+    </script>
+    <title>Ejercicio 15</title>
+</head>
+<body>
+    <input type="button" value="Aceptar" style='width:250px; height:40px' id="boton" onclick="miFuncion();"><br>
+</body>
+</html>

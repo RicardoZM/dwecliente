@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 5</title>
+</head>
+<body id='p'>
+    <script>
+        var a = true;
+        var b = false;
+        var a1 = false;
+        var b1 = true;
+        document.getElementById("p").style.color = "#92b1e3";//meter css junto con javascript. Dentro de los parentesis se mete el id del elemento que queremos dar formato
+        document.write("<center><table border='4'><caption><h2>Operador AND OR</h2></caption>");
+        document.write("<tr>" + "<td>" + "OR" + "</td>" + "<td>" + "AND" + "</td>" + "<td>" + "A" + "</td>" + "<td>" + "B" + "</td>" + "</tr>");
+        c = a || b;
+        d = a && b;
+        document.write("<tr>" + "<td>" + c + "</td>" + "<td>" + d + "</td>" + "<td>" + c + "</td>" + "<td>" + d + "</td>" + "</tr>");
+        e = a || b1;
+        f = a && b1;
+        document.write("<tr>" + "<td>" + e + "</td>" + "<td>" + f + "</td>" + "<td>" + e + "</td>" + "<td>" + f + "</td>" + "</tr>");
+        g = a1 || b;
+        h = a1 && b;
+        document.write("<tr>" + "<td>" + g + "</td>" + "<td>" + h + "</td>" + "<td>" + g + "</td>" + "<td>" + h + "</td>" + "</tr>");
+        i = a1 || b1;
+        j = a1 && b1;
+        document.write("<tr>" + "<td>" + i + "</td>" + "<td>" + j + "</td>" + "<td>" + i + "</td>" + "<td>" + j + "</td>" + "</tr>");
+        document.write("</table></center>");
+    </script>
+</body>
+</html>

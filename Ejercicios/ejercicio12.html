@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 12</title>
+</head>
+
+<body>
+    <div id="mi div">
+    </div>
+    <script>
+        var valor = parseInt(prompt("Introduce una edad", ""));
+        var valor1 = "";
+        if (isNaN(valor)) {
+            alert("Debe introducir un numero");
+        } else {
+            switch (true) {
+                case (valor < 7 && valor >= 1):
+                    valor1 = "Acido";
+                    break;
+                case (valor > 7 && valor <= 14):
+                    valor1 = "Basico";
+                    break;
+                case (valor == 7):
+                    valor1 = "Neutro";
+                    break;
+                default:
+                    alert("Fuera de rango");
+                    break;
+            }
+        }
+        document.getElementById("mi div").innerHTML = "<p><strong>" + valor1 + "</p>";
+
+    </script>
+</body>
+
+</html>

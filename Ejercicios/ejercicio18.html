@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function factorial(num) {
+            var resultado;
+            if (num == 0) {
+                resultado = 1;
+            } else {
+                resultado = num * factorial(num - 1);
+            }
+            return resultado;
+        }
+
+    </script>
+    <title>Ejercicio 18</title>
+</head>
+
+<body>
+    <input type="button" value="Aceptar" style='width:250px; height:40px' id="boton" onclick="factorial();"><br>
+</body>
+
+</html>

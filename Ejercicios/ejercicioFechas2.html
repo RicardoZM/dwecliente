@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 19</title>
+</head>
+
+<body>
+<fieldset><legend>Introducir fecha</legend>
+    Año : <input type="text" id="anyo"><br/>
+    Mes : <input type="text" id="mes"><br/>
+    Dia de mes : <input type="text" id="diaMes"><br/>
+    Dia de la semana(L....D) : <input type="text" id="diaSe"><br/>
+    Hora : <input type="text" id="hora"><br/>
+    Minutos : <input type="text" id="minutos"><br/>
+    Segundos : <input type="text" id="segundos"><br/>
+    <input type="button" value="Aceptar" id="boton" onclick="mostrarCadena();"><br/>
+    </fieldset>
+    
+   <fieldset><legend>Dia semana,dia,mes,año</legend>
+    Cadena dia de la semana, dia, mes , año<input type="button" value="Dia semana" id ="boton2" onclick="cadenaFormatoLocal()"><br/>
+    </fieldset>
+    <fieldset><legend>Hora, minutos y segundos</legend>
+    Cadena hora, minutos, segundos<input type="button" value="Hora" id ="boton3" onclick="cadenaHoraFormatoLocal()"><br/>
+    </fieldset>
+    <fieldset><legend>Fecha completa</legend>
+    Cadena fecha completa<input type="button" value="Fecha completa" id ="boton4" onclick="cadenaFechaCompleta()"><br/>
+    </fieldset>
+    <fieldset><legend>Edad usuario</legend>
+    Introduce fecha nacimiento<input type="date" name="calculaEdad" id="edad">
+    <input type="button" value="Aceptar" id ="boton5" onclick="calculaEdad()"><br/>
+    </fieldset>
+
+    <script>
+    function mostrarCadena(){
+        var anyo,mes,dia,hora,minutos,segundos;
+        //Año
+        anyo = document.getElementById("anyo").value;
+        anyo = parseInt(anyo);
+        //Mes en formato texto
+        mes = document.getElementById("mes").value;
+        //Dia del mes
+        diaMes = document.getElementById("diaMes").value;
+        diaMes = parseInt(diaMes);
+        //Dia de la semana (Lunes)
+        diaSe = document.getElementById("diaSe").value;
+        diaSe = diaSe;
+        hora = document.getElementById("hora").value;
+        hora = parseInt(hora);
+        minutos = document.getElementById("minutos").value;
+        minutos = parseInt(minutos);
+        segundos = document.getElementById("segundos").value;
+        segundos = parseInt(segundos);
+
+        document.write("Fechado en San Fernando de Henares en " + diaSe + " a " + diaMes + " de " + mes + " de " + anyo + " a las " + hora 
+        + " horas y " + minutos + " minutos con " + segundos + " segundos") ;
+        
+     }
+
+     function cadenaFormatoLocal(){
+        fecha = new Date();
+        document.write(fecha.toDateString() + "<br/>");  
+     }
+
+     function cadenaHoraFormatoLocal(){
+        fecha2 = new Date();
+        document.write(fecha2.toTimeString() + "<br/>");
+     }
+
+     function cadenaFechaCompleta(){
+        fecha = new Date();
+        document.write(fecha + "<br/>");
+     }
+
+
+     function calculaEdad(){
+
+     }
+
+      function diferenciaFechas(){
+        var dia = 1000*60*60*24;
+        var mes = dia*30;
+        var anio = mes*12;
+
+        misanios = milisegundos /anio;
+
+        misanios = math.floor(milisegundos/anio);
+        restoanios = milisegundos%anio;
+        mismeses = math.floor(restoanios/mes);
+        restomeses = restoanios%mes;
+        misdias = math.floor(restomeses/dia);                                                                                                                                                                                                                                                                                                                                                                
+     }
+
+    </script>
+</body>
+
+</html>

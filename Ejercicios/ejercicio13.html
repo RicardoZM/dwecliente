@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function miFuncion() {
+            var numero = document.getElementById("texto").value;
+            numero = parseInt(numero);
+            if (isNaN(numero)) {
+                document.getElementById("texto").value = "Debe introducir un numero";
+            } else {
+                switch (numero) {
+                    case 1:
+                        document.getElementById("imagen").innerHTML = '<img src="fotos/foto1.jpg" width = "200" height="200"><br>foto1.jpg';
+                        break;
+                    case 2:
+                        document.getElementById("imagen").innerHTML = '<img src="fotos/foto2.jpg" width = "200" height="200"><br>foto2.jpg';
+                        break;
+                    case 3:
+                        document.getElementById("imagen").innerHTML = '<img src="fotos/foto3.jpg" width = "200" height="200"><br>foto3.jpg';
+                        break;
+                    case 4:
+                        document.getElementById("imagen").innerHTML = '<img src="fotos/foto4.jpg" width = "200" height="200"><br>foto4.jpg';
+                        break;
+                    default:
+                        alert("Número no permitido");
+                }
+            }
+        }
+    </script>
+    <title>Ejercicio 13</title>
+</head>
+<body>
+    <input type="text" id="texto">
+    <input type="button" value="Aceptar" id="boton" onclick="miFuncion();"><br>
+    <div id="imagen"></div>
+</body>
+</html>

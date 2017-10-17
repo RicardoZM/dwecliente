@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        /*Juego PUM
+        1...10
+        Numeros separados por comas
+        Numero que termina en 7 o multiplo de 7 Escribir PUM y salto de linea
+        */
+        function miFuncion() {
+            for (i = 1; i <= 100; i++) {
+                if (i % 7 == 0) {
+                    document.write("PUM <br>");
+                } else if (i % 10 == 7) {
+                    document.write("PUM");
+                } else {
+                    document.write(i + ",");
+                }
+            }
+        }
+
+    </script>
+    <title>Ejercicio 16</title>
+</head>
+<body>
+    <input type="button" value="Aceptar" style='width:250px; height:40px' id="boton" onclick="miFuncion();"><br>
+</body>
+</html>

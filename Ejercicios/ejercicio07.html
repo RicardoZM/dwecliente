@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function miFuncion() {
+            var numero = document.getElementById("texto").value;
+            if (isNaN(numero)) {
+                document.getElementById("resultado").value = "Debe introducir un numero";
+            } else {
+                if (numero % 2 == 0) {
+                    document.getElementById("resultado").value = "El " + numero + " es par";
+                } else {
+                    document.getElementById("resultado").value = "El " + numero + " es impar";
+                }
+            }
+        }
+
+    </script>
+    <title>Ejercicio 7</title>
+</head>
+<body>
+    <input type="text" id="texto">
+    <input type="button" value="Aceptar" id="boton" onclick="miFuncion();"><br>
+    <input type="text" id="resultado">
+</body>
+</html>
